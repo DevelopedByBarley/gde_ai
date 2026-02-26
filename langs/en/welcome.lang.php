@@ -81,6 +81,36 @@ With a practical and industry-focused approach, the program provides a professio
                 'value' => 'artificial_intelligence',
             ],
         ],
+        'all_conf_items' => [
+            [
+                'title' => 'Information Security',
+                'value' => 'information_security',
+                'meta' => 'Cybersecurity, data protection, risk management',
+                'date' => 'May 18',
+                'fileName' => 'secure_1.png',
+            ],
+            [
+                'title' => 'Drone Technology',
+                'value' => 'drone_technology',
+                'meta' => 'Systems, applications, risk management',
+                'date' => 'May 18',
+                'fileName' => 'drone.png',
+            ],
+            [
+                'title' => 'FTFL Conference',
+                'value' => 'ftfl',
+                'meta' => 'Learning systems, new methodologies',
+                'date' => 'May 18',
+                'fileName' => 'ftfl.png',
+            ],
+            [
+                'title' => 'AI Conference',
+                'value' => 'artificial_intelligence',
+                'meta' => 'AI, data, applications',
+                'date' => 'May 18',
+                'fileName' => 'ai.png',
+            ],
+        ]
     ],
     'speakers' => [
         'title' => 'Speakers',

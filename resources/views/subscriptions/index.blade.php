@@ -6,28 +6,6 @@
         <div class="row justify-content-center py-5">
             <div class="col-12 col-lg-6">
                 <div class="bg-white rounded-4 shadow p-4 p-md-5">
-                    <?php
-                    // Get subscribed conferences from cookie once
-                    $subscribedConferences = isset($_COOKIE['conferences']) ? json_decode($_COOKIE['conferences'], true) : [];
-                    
-                    if (!empty($subscribedConferences)):
-                        // Create a mapping from value to title for current language
-                        $confItems = lang('welcome__registration.conf_items');
-                        $valueToTitle = [];
-                        foreach ($confItems as $item) {
-                            $valueToTitle[$item['value']] = $item['title'];
-                        }
-                    ?>
-                    <div class="alert alert-info mb-4">
-                        <strong>ℹ️ Információ:</strong> Ön már regisztrált a következő konferenciákra:
-                        <ul class="mb-0 mt-2">
-                            <?php foreach ($subscribedConferences as $conference): ?>
-                            <li><?= $valueToTitle[$conference] ?? $conference ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                    <?php endif; ?>
-                    
                     <?= errors('conferences', session('errors')) ?>
                     <div class="text-center fw-bold h1 text-main-blue mb-4"><?= lang('welcome__registration.title') ?></div>
 
@@ -96,12 +74,7 @@
                     </div>
 
                     <div class="d-flex flex-column gap-3 text-main-blue">
-                        <?php 
-                        // Use the already defined $subscribedConferences variable
-                        foreach (lang('welcome__registration.conf_items') as $index => $item): 
-                            // Skip if this conference is already in the cookie
-                            if (in_array($item['value'], $subscribedConferences)) continue;
-                        ?>
+                        <?php foreach (lang('welcome__registration.conf_items') as $index => $item): ?>
                         <div class="d-flex align-items-center gap-3 border rounded-3 p-2">
                             <input class="form-check-input m-0 conf-check" type="checkbox" id="conf<?= $index + 1 ?>"
                                 name="conferences[]" value="<?= $item['value'] ?>" <?= in_array($item['value'], old('conferences', [])) ? 'checked' : '' ?>>
@@ -117,28 +90,6 @@
                         </div>
                         <?php endforeach; ?>
                     </div>
-
-                    <!--  backup 
-                    
-                           <div class="d-flex flex-column gap-3 text-main-blue">
-                        <?php foreach (lang('welcome__registration.conf_items') as $index => $item): ?>
-                        <div class="d-flex align-items-center gap-3 border rounded-3 p-2">
-                            <input class="form-check-input m-0 conf-check" type="checkbox" id="conf<?= $index + 1 ?>"
-                                name="conferences[]" value="<?= $item['value'] ?>" <?= in_array($item['title'], old('conferences', [])) ? 'checked' : '' ?>>
-                            <div class="bg-main-blue text-main-blue rounded-3 px-3 py-2 fw-bold">
-                                <img style="width: 50px;" src="<?= public_file('images/base/' . $item['fileName']) ?>"
-                                    alt="">
-                            </div>
-                            <div class="flex-grow-1">
-                                <div class="fw-semibold"><?= $item['title'] ?></div>
-                                <div class="small text-main-blue"><?= $item['meta'] ?></div>
-                            </div>
-                            <div class="small fw-semibold text-main-blue"><?= $item['date'] ?></div>
-                        </div>
-                        <?php endforeach; ?>
-                    </div>
-                    -->
-
                     <div class="form-check mt-4 text-main-blue">
                         <input class="form-check-input" type="checkbox" id="terms_agree" name="terms_agree"
                             value="1" required>

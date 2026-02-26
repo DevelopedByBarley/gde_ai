@@ -81,6 +81,36 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
                 'value' => 'artificial_intelligence',
             ],
         ],
+        'all_conf_items' => [
+            [
+                'title' => 'Információbiztonság',
+                'value' => 'information_security',
+                'meta' => 'Kiberbiztonság, adatvédelem, kockázatkezelés',
+                'date' => 'május 18.',
+                'fileName' => 'secure_1.png',
+            ],
+            [
+                'title' => 'Dróntechnológia',
+                'value' => 'drone_technology',
+                'meta' => 'Rendszerek, alkalmazások, kockázatkezelés',
+                'date' => 'május 18.',
+                'fileName' => 'drone.png',
+            ],
+            [
+                'title' => 'FTFL konferencia',
+                'value' => 'ftfl',
+                'meta' => 'Tanulási rendszerek, új módszertanok',
+                'date' => 'május 18.',
+                'fileName' => 'ftfl.png',
+            ],
+            [
+                'title' => 'MI Konferencia',
+                'value' => 'artificial_intelligence',
+                'meta' => 'AI, adatok, alkalmazások',
+                'date' => 'május 18.',
+                'fileName' => 'ai.png',
+            ],
+        ]
     ],
     'speakers' => [
         'title' => 'Előadók',

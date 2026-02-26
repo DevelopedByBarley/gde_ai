@@ -55,7 +55,7 @@ class SubscriptionController extends Controller
 
       if (!empty($duplicate_conferences)) {
         // Map conference values to titles based on current language
-        $confItems = lang('welcome__registration.conf_items');
+        $confItems = lang('welcome__registration.all_conf_items');
         $valueToTitle = [];
         foreach ($confItems as $item) {
           $valueToTitle[$item['value']] = $item['title'];
@@ -101,19 +101,14 @@ class SubscriptionController extends Controller
         $this->toast->danger(lang('welcome__registration.subscription_failed'))->back();
       }
 
-      // Merge new conferences with existing ones in the cookie
-      $existing_cookie_conferences = isset($_COOKIE['conferences']) ? json_decode($_COOKIE['conferences'], true) : [];
       $new_conferences = json_decode($validated['conferences'], true);
-      $merged_conferences = array_unique(array_merge($existing_cookie_conferences, $new_conferences));
-
-      setcookie('conferences', json_encode($merged_conferences), time() + (86400 * 30), "/"); // 30 days
 
       // Determine language from cookie
       $lang = explode('-', $_COOKIE['lang'] ?? 'hu-HU')[0];
       $templateName = 'feedback-' . $lang;
       
       // Map conference values to translated titles
-      $confItems = lang('welcome__registration.conf_items');
+      $confItems = lang('welcome__registration.all_conf_items');
       $valueToTitle = [];
       foreach ($confItems as $item) {
         $valueToTitle[$item['value']] = $item['title'];
@@ -127,6 +122,7 @@ class SubscriptionController extends Controller
       $existing_conference_titles = array_map(function($value) use ($valueToTitle) {
         return $valueToTitle[$value] ?? $value;
       }, $existing_conferences);
+      
       
       // Filter abstract URLs to only include URLs for new conferences
       $new_conference_urls = [];
