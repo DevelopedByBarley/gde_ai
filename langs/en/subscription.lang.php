@@ -16,24 +16,28 @@ return [
   'conf_items' => [
     [
       'title' => 'Information Security',
+      'value' => 'information_security',
       'meta' => 'Cyber security, data protection, risk management',
       'date' => '18 May',
       'icon' => '🔒',
     ],
     [
       'title' => 'Drone Technology',
+      'value' => 'drone_technology',
       'meta' => 'Systems, applications, risk management',
       'date' => '18 May',
       'icon' => '🛸',
     ],
     [
       'title' => 'FTFL',
+      'value' => 'ftfl',
       'meta' => 'Learning systems, new methodologies',
       'date' => '18 May',
       'icon' => '💡',
     ],
     [
       'title' => 'Artificial Intelligence',
+      'value' => 'artificial_intelligence',
       'meta' => 'AI, data, applications',
       'date' => '18 May',
       'icon' => '☁️',

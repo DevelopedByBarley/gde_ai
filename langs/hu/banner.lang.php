@@ -1,8 +1,8 @@
 <?php
 return [
   'university' => 'Gábor Dénes Egyetem',
-  'title' => 'Mesterséges intelligencia és alkalmazott pénzügyek',
-  'date_range' => 'Május 18-22.',
+  'title' => 'Gábor Dénes Digital Horizons Week',
+  'date_range' => 'Május 18-20.',
   'city' => 'Budapest, HU',
   'year' => '2026',
   'lang' => [

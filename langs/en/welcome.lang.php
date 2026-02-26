@@ -69,13 +69,16 @@ With a practical and industry-focused approach, the program provides a professio
         'select_conferences' => 'Select the conferences you would like to attend',
         'agree' => 'I agree to the terms and conditions',
         'submit' => 'Submit',
+        'already_subscribed' => 'You have already subscribed to the following conferences: ',
+        'subscription_success' => 'Subscription created successfully!',
+        'subscription_failed' => 'Subscription could not be created. Please try again later.',
         'conf_items' => [
             [
                 'title' => 'AI Conference',
                 'meta' => 'AI, data, applications',
                 'date' => '18 May',
                 'fileName' => 'ai.png',
-                'value' => 'AI Conference',
+                'value' => 'artificial_intelligence',
             ],
         ],
     ],

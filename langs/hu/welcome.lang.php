@@ -69,13 +69,16 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
         'agree' => 'Elfogadom az ÁSZF-et',
         'submit' => 'Küldés',
+        'already_subscribed' => 'Ön már regisztrált a következő konferenciákra: ',
+        'subscription_success' => 'Sikeres regisztráció!',
+        'subscription_failed' => 'A regisztráció nem sikerült. Kérjük, próbálja újra később.',
         'conf_items' => [
             [
                 'title' => 'MI Konferencia',
                 'meta' => 'AI, adatok, alkalmazások',
                 'date' => 'május 18.',
                 'fileName' => 'ai.png',
-                'value' => 'AI Conference',
+                'value' => 'artificial_intelligence',
             ],
         ],
     ],

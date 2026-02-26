@@ -6,20 +6,16 @@ return [
   ],
   'topics' => [
     [
-      'label' => 'AI',
-      'url' => '#ai',
+      'label' => 'Drone Technology',
+      'url' => 'https://dronkonferencia.gde.hu/',
     ],
     [
       'label' => 'FTFL',
-      'url' => '#ftfl',
+      'url' => 'https://ftfl.gde.hu/',
     ],
     [
-      'label' => 'Drone technology',
-      'url' => '#drone-technology',
-    ],
-    [
-      'label' => 'Information Security',
-      'url' => '#information-security',
+      'label' => 'AI',
+      'url' => 'https://aikonferencia.gde.hu/',
     ],
   ],
 ];
