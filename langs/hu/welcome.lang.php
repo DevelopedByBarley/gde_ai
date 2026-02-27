@@ -138,13 +138,53 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
     ],
     'info' => [
-        'title' => 'Hasznos információk',
-        'how_to_get_there_title' => 'Kinek szól a konferencia?',
-        'how_to_get_there_text' => 'A konferencia a dróntechnológia és az UAS-rendszerek fejlesztésében, alkalmazásában és kutatásában érintett szakembereket szólítja meg.',
-        'registration_open_title' => 'Menetrend',
-        'registration_open_text' => 'A részletes program három napos bontásban érhető el.',
-        'schedule_title' => 'Előadók',
-        'schedule_text' => 'Hazai és nemzetközi szakértők mutatják be kutatási és ipari tapasztalataikat.',
+        'title' => 'Gyakori kérdések',
+        'faq' => [
+            [
+                'question' => 'Mikor és hol kerül megrendezésre az esemény?',
+                'answer' => 'Időpont: 2026. május 18–21.<br>Helyszín: 1039 Budapest, Fejér Lipót utca 70.',
+            ],
+            [
+                'question' => 'Hogyan épül fel egy konferencianap?',
+                'answer' => 'Délelőtt angol nyelvű plenáris előadások<br>Délután magyar és angol nyelvű szekcióülések<br>A nap végén szervezett szabadidős programok',
+            ],
+            [
+                'question' => 'Lesz online közvetítés?',
+                'answer' => 'Igen. A konferencia online streamen keresztül is követhető, minden konferencia dedikált weboldalán, valamint a Gábor Dénes Egyetem YouTube csatornáján.',
+            ],
+            [
+                'question' => 'Lesznek kiállítók?',
+                'answer' => 'Igen. A konferenciahéten szakmai kiállítók is részt vesznek.',
+            ],
+            [
+                'question' => 'Biztosított-e étkezés?',
+                'answer' => 'Igen. A konferencianapokon ebédet, valamint kávét és üdítőt biztosítunk a regisztrált résztvevők számára.',
+            ],
+            [
+                'question' => 'Van részvételi díj?',
+                'answer' => 'A részvétel díjmentes, de előzetes regisztráció szükséges.',
+            ],
+            [
+                'question' => 'Hogyan lehet résztvevőként jelentkezni?',
+                'answer' => 'Az online regisztráció kitöltése elegendő. További teendő nincs.',
+            ],
+            [
+                'question' => 'Kapnak a résztvevők részvételi igazolást?',
+                'answer' => 'Igen, részvételi igazolást igény esetén biztosítunk.',
+            ],
+            [
+                'question' => 'Hogyan lehet előadóként jelentkezni?',
+                'answer' => 'Online regisztráció szükséges. A visszaigazoló e-mailben külön link érkezik az absztrakt feltöltéséhez. Az absztraktot az előírt formai követelmények szerint kell benyújtani. A feltöltést követően legkésőbb egy héten belül érkezik értesítés az elfogadásról vagy elutasításról.',
+            ],
+            [
+                'question' => 'A konferenciára benyújtott absztraktok hol jelennek meg?',
+                'answer' => 'A hivatalosan elfogadott absztraktok absztraktkötetben jelennek meg. Az absztraktkötet a konferencia programfüzeteként is funkcionál.',
+            ],
+            [
+                'question' => 'Kapnak az előadók előadói igazolást?',
+                'answer' => 'Igen, előadói igazolást igény esetén biztosítunk.',
+            ],
+        ],
     ],
     'landing' => [
         'hero' => [

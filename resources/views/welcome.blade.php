@@ -132,31 +132,9 @@
 </div>
 
 <!-- FAQ Section -->
-<div class="bg-light py-6">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <h2 class="h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.faq.title') ?></h2>
-                <div class="accordion" id="faqAccordion">
-                    <?php foreach (lang('welcome__landing.faq.items') as $index => $faq): ?>
-                    <div class="accordion-item border-0 <?= $index < count(lang('welcome__landing.faq.items')) - 1 ? 'mb-3' : '' ?> shadow-sm">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button <?= $index > 0 ? 'collapsed' : '' ?> fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq<?= $index + 1 ?>">
-                                <?= $faq['question'] ?>
-                            </button>
-                        </h2>
-                        <div id="faq<?= $index + 1 ?>" class="accordion-collapse collapse <?= $index === 0 ? 'show' : '' ?>" data-bs-parent="#faqAccordion">
-                            <div class="accordion-body text-secondary">
-                                <?= $faq['answer'] ?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        </div>
+        <?php include base_path('resources/views/components/faq.blade.php'); ?>
     </div>
-</div>
 
 <footer class="gradient-bg-horizontal text-white mt-5">
     <div class="container py-5">

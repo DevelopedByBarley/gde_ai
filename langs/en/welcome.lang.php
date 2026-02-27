@@ -139,13 +139,53 @@ With a practical and industry-focused approach, the program provides a professio
         ],
     ],
     'info' => [
-        'title' => 'Useful Information',
-        'how_to_get_there_title' => 'Who is the conference for?',
-        'how_to_get_there_text' => 'The conference addresses professionals involved in developing, applying, and researching drone technology and UAS systems.',
-        'registration_open_title' => 'Agenda',
-        'registration_open_text' => 'The detailed program is available in a three-day structure.',
-        'schedule_title' => 'Speakers',
-        'schedule_text' => 'Domestic and international experts present their research and industry experience.',
+        'title' => 'Frequently Asked Questions',
+        'faq' => [
+            [
+                'question' => 'When and where will the event take place?',
+                'answer' => 'Date: May 18–21, 2026<br>Location: 1039 Budapest, Fejér Lipót Street 70.',
+            ],
+            [
+                'question' => 'How is a conference day structured?',
+                'answer' => 'Morning: English-language plenary sessions<br>Afternoon: Hungarian and English section sessions<br>Evening: Organized leisure programs',
+            ],
+            [
+                'question' => 'Will there be online streaming?',
+                'answer' => 'Yes. The conference can be followed online via streaming on each conference\'s dedicated website and on the Gábor Dénes University YouTube channel.',
+            ],
+            [
+                'question' => 'Will there be exhibitors?',
+                'answer' => 'Yes. Professional exhibitors will participate during the conference week.',
+            ],
+            [
+                'question' => 'Is catering provided?',
+                'answer' => 'Yes. Lunch, coffee, and refreshments are provided for registered participants during conference days.',
+            ],
+            [
+                'question' => 'Is there a participation fee?',
+                'answer' => 'Participation is free, but prior registration is required.',
+            ],
+            [
+                'question' => 'How can I register as a participant?',
+                'answer' => 'Completing the online registration form is sufficient. No further action is needed.',
+            ],
+            [
+                'question' => 'Will participants receive a certificate of attendance?',
+                'answer' => 'Yes, certificates of attendance are provided upon request.',
+            ],
+            [
+                'question' => 'How can I apply as a speaker?',
+                'answer' => 'Online registration is required. A separate link for abstract submission will be sent in the confirmation email. The abstract must be submitted according to the prescribed formatting requirements. Notification of acceptance or rejection will be sent within one week of submission.',
+            ],
+            [
+                'question' => 'Where will the abstracts submitted to the conference be published?',
+                'answer' => 'Officially accepted abstracts will be published in an abstract booklet. The abstract booklet also functions as the conference program.',
+            ],
+            [
+                'question' => 'Will speakers receive a speaker certificate?',
+                'answer' => 'Yes, speaker certificates are provided upon request.',
+            ],
+        ],
     ],
     'landing' => [
         'hero' => [
