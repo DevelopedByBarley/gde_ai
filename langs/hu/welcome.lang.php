@@ -2,8 +2,8 @@
 
 return [
     'hero' => [
-        'title' => 'AIAF',
-        'subtitle' => '',
+        'title' => 'FIFA2026',
+        'subtitle' => 'The Future of Intelligence The Future of Applications',
         'description' => '
         A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
 A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
@@ -69,48 +69,50 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
         'agree' => 'Elfogadom az ÁSZF-et',
         'submit' => 'Küldés',
+        'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
         'already_subscribed' => 'Ön már regisztrált a következő konferenciákra: ',
         'subscription_success' => 'Sikeres regisztráció!',
         'subscription_failed' => 'A regisztráció nem sikerült. Kérjük, próbálja újra később.',
+        'registration_type' => 'Válassza ki hogy milyen módon szeretne részt venni a konferencián',
         'conf_items' => [
             [
-                'title' => 'MI Konferencia',
-                'meta' => 'AI, adatok, alkalmazások',
-                'date' => 'május 18.',
-                'fileName' => 'ai.png',
+                'title' => 'The Future of Intelligence The Future of Applications',
                 'value' => 'artificial_intelligence',
+                'meta' => 'FIFA2026',
+                'date' => 'May 18',
+                'fileName' => 'ai.png',
             ],
         ],
         'all_conf_items' => [
             [
-                'title' => 'Információbiztonság',
+                'title' => 'The Future of Intelligence The Future of Applications',
+                'value' => 'artificial_intelligence',
+                'meta' => 'FIFA2026',
+                'date' => 'Május 18',
+                'fileName' => 'ai.png',
+            ],
+            [
+                'title' => 'The Future of Security The Future of Trust',
                 'value' => 'information_security',
-                'meta' => 'Kiberbiztonság, adatvédelem, kockázatkezelés',
-                'date' => 'május 18.',
+                'meta' => 'FSFT2026',
+                'date' => 'Május 19',
                 'fileName' => 'secure_1.png',
             ],
             [
-                'title' => 'Dróntechnológia',
+                'title' => 'The Future of Dronedata The Future of Vision',
                 'value' => 'drone_technology',
-                'meta' => 'Rendszerek, alkalmazások, kockázatkezelés',
-                'date' => 'május 18.',
+                'meta' => 'FDFV2026',
+                'date' => 'Május 20',
                 'fileName' => 'drone.png',
             ],
             [
-                'title' => 'FTFL konferencia',
+                'title' => 'The Future of Teaching The Future of Learning',
                 'value' => 'ftfl',
-                'meta' => 'Tanulási rendszerek, új módszertanok',
-                'date' => 'május 18.',
+                'meta' => 'FTFL2026',
+                'date' => 'Május 21',
                 'fileName' => 'ftfl.png',
             ],
-            [
-                'title' => 'MI Konferencia',
-                'value' => 'artificial_intelligence',
-                'meta' => 'AI, adatok, alkalmazások',
-                'date' => 'május 18.',
-                'fileName' => 'ai.png',
-            ],
-        ]
+        ],
     ],
     'speakers' => [
         'title' => 'Előadók',
@@ -146,12 +148,14 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
     ],
     'landing' => [
         'hero' => [
-            'title' => 'AIAF',
+            'title' => 'FIFA2026',
+            'subtitle' => 'The Future of Intelligence The Future of Applications',
+            'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
             A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
             A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai fórumot az MI implementáció kihívásainak és az akadémiai, illetve piaci szereplők közötti együttműködési lehetőségek megvitatására.',
-            'date' => '2026. május 20.',
-            'location' => 'Budapest, Magyarország',
+            'date' => '2026. május 18.',
+            'location' => 'Gábor Dénes Egyetem, Budapest, Magyarország',
             'language' => 'HU / EN',
             'cta' => 'View full Summit',
         ],

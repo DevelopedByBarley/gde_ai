@@ -10,7 +10,7 @@ function hideToast(toast) {
   setTimeout(() => {
 
     toast.classList.remove('show');
-  }, 2000)
+  }, 6000)
 
 
   document.addEventListener('DOMContentLoaded', function () {

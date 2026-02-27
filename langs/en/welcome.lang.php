@@ -2,8 +2,8 @@
 
 return [
     'hero' => [
-        'title' => 'AIAF',
-        'subtitle' => '',
+        'title' => 'FIFA2026',
+        'subtitle' => 'The Future of Intelligence The Future of Applications',
         'description' => '
         The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
 The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
@@ -69,48 +69,51 @@ With a practical and industry-focused approach, the program provides a professio
         'select_conferences' => 'Select the conferences you would like to attend',
         'agree' => 'I agree to the terms and conditions',
         'submit' => 'Submit',
+        'help_text' => 'If you have any questions or issues, please write to:',
+        'help_email' => 'support@gde.example',
         'already_subscribed' => 'You have already subscribed to the following conferences: ',
         'subscription_success' => 'Subscription created successfully!',
         'subscription_failed' => 'Subscription could not be created. Please try again later.',
+        'registration_type' => 'Select how you would like to participate in the conference',
         'conf_items' => [
             [
-                'title' => 'AI Conference',
-                'meta' => 'AI, data, applications',
-                'date' => '18 May',
-                'fileName' => 'ai.png',
+                'title' => 'The Future of Intelligence The Future of Applications',
                 'value' => 'artificial_intelligence',
+                'meta' => 'FIFA2026',
+                'date' => 'May 18',
+                'fileName' => 'ai.png',
             ],
         ],
         'all_conf_items' => [
             [
-                'title' => 'Information Security',
-                'value' => 'information_security',
-                'meta' => 'Cybersecurity, data protection, risk management',
-                'date' => 'May 18',
-                'fileName' => 'secure_1.png',
-            ],
-            [
-                'title' => 'Drone Technology',
-                'value' => 'drone_technology',
-                'meta' => 'Systems, applications, risk management',
-                'date' => 'May 18',
-                'fileName' => 'drone.png',
-            ],
-            [
-                'title' => 'FTFL Conference',
-                'value' => 'ftfl',
-                'meta' => 'Learning systems, new methodologies',
-                'date' => 'May 18',
-                'fileName' => 'ftfl.png',
-            ],
-            [
-                'title' => 'AI Conference',
+                'title' => 'The Future of Intelligence The Future of Applications',
                 'value' => 'artificial_intelligence',
-                'meta' => 'AI, data, applications',
+                'meta' => 'FIFA2026',
                 'date' => 'May 18',
                 'fileName' => 'ai.png',
             ],
-        ]
+            [
+                'title' => 'The Future of Security The Future of Trust',
+                'value' => 'information_security',
+                'meta' => 'FSFT2026',
+                'date' => 'May 19',
+                'fileName' => 'secure_1.png',
+            ],
+            [
+                'title' => 'The Future of Dronedata The Future of Vision',
+                'value' => 'drone_technology',
+                'meta' => 'FDFV2026',
+                'date' => 'May 20',
+                'fileName' => 'drone.png',
+            ],
+            [
+                'title' => 'The Future of Teaching The Future of Learning',
+                'value' => 'ftfl',
+                'meta' => 'FTFL2026',
+                'date' => 'May 21',
+                'fileName' => 'ftfl.png',
+            ],
+        ],
     ],
     'speakers' => [
         'title' => 'Speakers',
@@ -146,12 +149,14 @@ With a practical and industry-focused approach, the program provides a professio
     ],
     'landing' => [
         'hero' => [
-            'title' => 'AIAF',
+            'title' => 'FIFA2026',
+            'subtitle' => 'The Future of Intelligence The Future of Applications',
+            'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
             The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
             With a practical and industry-focused approach, the program provides a professional forum to discuss AI implementation challenges and collaboration opportunities between academic and market actors.',
-            'date' => '20 May 2026',
-            'location' => 'Budapest, Hungary',
+            'date' => '18 May 2026',
+            'location' => 'Dennis Gabor University, Budapest, Hungary',
             'language' => 'HU / EN',
             'cta' => 'View full Summit',
         ],

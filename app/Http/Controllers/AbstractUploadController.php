@@ -8,6 +8,15 @@ use Core\ValidationException;
 
 class AbstractUploadController extends Controller
 {
+  private $abstractModel;
+
+  public function __construct()
+  {
+    parent::__construct();
+    $this->abstractModel = new \App\Models\AbstractModel();
+  }
+
+
   public function index()
   {
     return Response::view('abstracts/index', 'layout');
@@ -21,17 +30,33 @@ class AbstractUploadController extends Controller
       $validated = $this->request->validate([
         'name' => ['required', 'string', 'min:3', 'max:100', 'split', 'alpha'],
         'email' => ['required', 'email', 'max:255'],
-        'abstract_file' => [
-          'required',
-          'fileSize:3072',
-          'mimeType:application/pdf|application/msword|application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-        ],
-      ], array_merge($this->request->all(), ['abstract_file' => $file]));
+      ]);
 
-      $savedFileName = $this->storage->file($file)->save('/abstracts');
+      // Validate file size
+      if ($file['size'] > 5 * 1024 * 1024) { // 5MB limit
+        $this->toast->danger('Az absztrakt fájl mérete nem haladhatja meg az 5MB-ot.')->back();
+      }
+      
+      // Set whitelist before adding the file
+      $savedFileName = $this->storage
+        ->setWhiteList(['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'])
+        ->file($file)
+        ->save('/storage/uploads/abstracts/ai');
 
       if (!$savedFileName) {
         $this->toast->danger('Az absztrakt feltöltése nem sikerült. Kérjük próbálja meg újra.')->back();
+      }
+
+      $validated['fileName'] = $savedFileName;
+      $validated['originalFileName'] = $file['name'];
+      $validated['type'] = 'ai';
+      $validated['created_at'] = date('Y-m-d H:i:s');
+
+      $last_id = $this->abstractModel->create($validated);
+
+      if(!$last_id) {
+        $this->storage->deletePrevImages('/storage/uploads/abstracts/ai', [$savedFileName]);
+        $this->toast->danger('Az absztrakt adatbázisba mentése nem sikerült. Kérjük próbálja meg újra.')->back();
       }
 
       $this->toast->success('Az absztrakt feltöltése sikeres!')->back();

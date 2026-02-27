@@ -64,3 +64,7 @@
 [DEV] Fail in Database class query function with message:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'termsAgree' in 'field list'
 [2026-02-03 12:19:45] CRITICAL: Database insert error in Model.
 [DEV] Database error: Query execution failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'termsAgree' in 'field list'
+[2026-02-26 19:34:03] CRITICAL: Database fail in query method
+[DEV] Fail in Database class query function with message:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'
+[2026-02-26 19:34:03] CRITICAL: Database insert error in Model.
+[DEV] Database error: Query execution failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'

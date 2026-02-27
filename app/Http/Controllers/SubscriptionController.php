@@ -35,10 +35,10 @@ class SubscriptionController extends Controller
       // Validate the incoming request data
       $validated = $this->request->validate([
         'registration_type' => ['required', 'string', 'in:attendee|speaker'],
-        'name' => ['required', 'string', 'min:3', 'max:100', 'split', 'alpha'],
+        'name' => ['required', 'string', 'min:3', 'max:100'],
         'email' => ['required', 'email', 'max:255'],
         'company' => ['required', 'string', 'min:2', 'max:255'],
-        'phone' => ['required', 'phone'],
+        'phone' => ['required', 'min:5', 'max:20'],
         'speaker_talk_title' => ['nullable', 'string', 'max:255'],
         'speaker_talk_summary' => ['nullable', 'string', 'max:3000'],
         'conferences' => ['required', 'array'],
@@ -46,6 +46,13 @@ class SubscriptionController extends Controller
       ]);
 
 
+      // Check if registration type is speaker and if so, we allow only one conference selection
+      if ($validated['registration_type'] === 'speaker' && count($validated['conferences']) > 1) {
+        $errorMessage = 'Előadóként csak egy konferenciára lehet regisztrálni.';
+        Session::flash('old', $validated);
+        Session::flash('errors', ['conferences' => ['errors' => [$errorMessage]]]);
+        $this->toast->danger($errorMessage)->back();
+      }
 
       // Check if the user subscribed to conferences  
       $existing_conferences = $this->subscriber->getConferencesByEmail($validated['email']);

@@ -4,9 +4,16 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
                 <div class="text-center">
-                    <h1 class="display-4 fw-bold mb-4 text-main-blue">
+                    <h1 class="display-4 fw-bold mb-2 text-main-blue">
                         <?= lang('welcome__landing.hero.title') ?>
                     </h1>
+                    <h2 class="h4 fw-semibold mb-2 text-main-blue">
+                        <?= lang('welcome__landing.hero.subtitle') ?>
+                    </h2>
+                    <h5 class="h5 text-muted fw-semibold mb-4 text-secondary">
+                        <?= lang('welcome__landing.hero.subsubtitle') ?>
+                    </h5>
+
                     <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
                         <?= lang('welcome__landing.hero.description') ?>
                     </p>
@@ -16,7 +23,7 @@
                         <span class="text-main-blue"><i class="bi bi-globe"></i> <?= lang('welcome__landing.hero.language') ?></span>
                     </div>
                     <div class="d-flex gap-3 justify-content-center">
-                        <a href="http://localhost:9090/" class="btn bg-main-blue text-white fw-bold px-5 py-3 rounded-pill">
+                        <a href="http://horizons.gde.hu" class="btn bg-main-blue text-white fw-bold px-5 py-3 rounded-pill">
                             <?= lang('welcome__landing.hero.cta') ?>
                         </a>
                     </div>
@@ -28,9 +35,9 @@
 
 <!-- Key Topics Section -->
 <div class="container py-6">
-    <div class="row justify-content-center">
+    <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-lg-10">
-            <h2 class="h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
+            <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
             <div class="row g-4">
                 <?php foreach (lang('welcome__landing.topics.items') as $topic): ?>
                 <div class="col-12 col-md-6">
