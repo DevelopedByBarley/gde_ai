@@ -13,7 +13,7 @@ foreach ($confItems as $item) {
         <div class="h-screen flex-grow-1 overflow-y-lg-auto">
             <?php require_once view_path('components/heading'); ?>
 
-            <main class="pt-3 pb-5 bg-surface-secondary">
+            <main class="pt-3 pb-5 my-3 bg-surface-secondary">
                 <div class="container-fluid px-3 px-lg-5">
                     <div class="row">
                         <div class="col-12">

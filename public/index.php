@@ -8,9 +8,9 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Event types ['ftfl', 'artificial_intelligence', 'information_security', 'drone_technology']
-define('EVENT_TYPE', 'artificial_intelligence');   
-define('ABSTRACT_TYPE', 'artificial_intelligence');
-define('EVENT_STARTED', false);
+define('EVENT_TYPE', $_ENV['EVENT_TYPE'] ?? 'artificial_intelligence');   
+define('ABSTRACT_TYPE', $_ENV['ABSTRACT_TYPE'] ?? 'artificial_intelligence');
+define('EVENT_STARTED', $_ENV['EVENT_STARTED'] ?? false);
 
 const BASE_PATH = __DIR__ . '/../';
 require_once __DIR__ . '/../vendor/autoload.php';
