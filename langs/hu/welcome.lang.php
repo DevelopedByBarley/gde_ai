@@ -230,7 +230,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
         'audience' => [
             'title' => 'Kinek szól a konferencia?',
-            'description' => 'A konferencia az oktatás és a tanulás digitális és módszertani megújulásában érintett szakmai szereplőket kívánja megszólítani. Várjuk egyetemi oktatók, pedagógusok, oktatáskutatók, PhD-hallgatók és oktatástechnológiai fejlesztők részvételét, valamint az intézményi és vállalati képzési területen dolgozó szakembereket. A rendezvény interdiszciplináris szakmai párbeszédet támogat az akadémiai és gyakorlati tapasztalatok mentén.',
+            'description' => 'A konferencia elsősorban azoknak szól, akik már aktívan dolgoznak mesterséges intelligencia alapú megoldásokkal: szakembereknek, projektgazdáknak és termékfelelősöknek, akik a napi munkájuk során szembesülnek az AI alkalmazásának kihívásaival és lehetőségeivel. Emellett értékes találkozási pontot kínál az egyetemi szféra képviselői – kutatók, oktatók és hallgatók – számára is. A program hasznos orientációt nyújt azoknak a kkv-tulajdonosoknak és döntéshozóknak is, akik még csak most fontolgatják a mesterséges intelligencia üzleti integrációját, és megalapozott képet szeretnének kapni a lehetséges irányokról. Végül, de nem utolsósorban, a jogi és etikai szakértők, valamint az államigazgatás területén dolgozók is releváns szempontokat és gyakorlati ismereteket vihetnek haza az előadásokról.'
         ],
         'agenda' => [
             'title' => 'Menetrend',
