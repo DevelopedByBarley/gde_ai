@@ -22,7 +22,7 @@ class AdminAbstractsController extends Controller
   {
     Log::info('Absztraktok lista megnyitva', ['admin' => auth('admin')->email ?? null], 'admin');
 
-    $abstracts = $this->paginator->data($this->abstractModel->findAllBy('type', EVENT_TYPE) ?? [])
+    $abstracts = $this->paginator->data($this->abstractModel->findAllBy('type', 'ai') ?? [])
       ->paginate(10);
 
     return Response::view('admin/abstracts/index', 'admin-layout', [
@@ -60,17 +60,17 @@ class AdminAbstractsController extends Controller
       return abort(404);
     }
 
-    $downloadName = $abstract->originalFileName ?? $fileName;
-    Log::info('Absztrakt letöltés', ['id' => $id, 'file' => $downloadName, 'admin' => auth('admin')->email ?? null], 'admin');
-    return Response::download($path, $downloadName);
+    Log::info('Absztrakt letöltés', ['id' => $id, 'file' =>  $fileName, 'admin' => auth('admin')->email ?? null], 'admin');
+    return Response::download($path,  $fileName);
   }
 
 
-  public function export() {
-    $abstracts = obj_to_arr($this->abstractModel->findAllBy('type', EVENT_TYPE)) ?? [];
+  public function export()
+  {
+    $abstracts = obj_to_arr($this->abstractModel->findAllBy('type', 'ai')) ?? [];
     // export with Excel class and download
     $exporter = new Excel();
     $exporter->data($abstracts)
       ->download('absztraktok.xlsx');
-     }
+  }
 }

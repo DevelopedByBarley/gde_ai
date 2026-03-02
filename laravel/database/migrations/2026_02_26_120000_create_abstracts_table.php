@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('email');
             $table->string('fileName');
             $table->string('originalFileName');
-            $table->enum('type', ['unit', 'ai', 'drone', 'ftfl', 'isec']);
+            $table->enum('type', ['fsft', 'ai', 'drone', 'ftfl', 'isec']);
             $table->timestamps();
         });
     }
