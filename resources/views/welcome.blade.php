@@ -40,13 +40,16 @@
             <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
             <div class="row g-4">
                 <?php foreach (lang('welcome__landing.topics.items') as $topic): ?>
-                <div class="col-12 col-md-6 text-center">
-                    <div class="d-flex gap-3align-items-center justify-content-center flex-column p-4 rounded">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex gap-3">
                         <div>
-                            <i class="bi <?= $topic['icon'] ?> text-main-blue" style="font-size: 3rem;"></i>
+                            <i class="bi <?= $topic['icon'] ?> text-main-blue" style="font-size: 1.5rem;"></i>
                         </div>
                         <div>
                             <h5 class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></h5>
+                            <?php if (!empty($topic['note'])): ?>
+                            <p class="small text-secondary mb-0"><?= $topic['note'] ?></p>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
