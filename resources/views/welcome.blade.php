@@ -74,7 +74,7 @@
 </div>
 
 <!-- Agenda Section -->
-<div class="container py-5">
+<div class="container mt-5 mb-5">
     <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
             <div class="accordion" id="agendaAccordion">
@@ -115,7 +115,7 @@
 </div>
 
 <!-- Speakers Section -->
-<div class="bg-light py-5">
+<div class="">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
