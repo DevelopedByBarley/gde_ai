@@ -28,7 +28,7 @@ class AbstractUploadController extends Controller
       $file = $this->request->file('abstract_file');
 
       $validated = $this->request->validate([
-        'name' => ['required', 'string', 'min:3', 'max:100', 'split', 'alpha'],
+        'name' => ['required', 'string', 'min:3', 'max:100',],
         'email' => ['required', 'email', 'max:255'],
       ]);
 
