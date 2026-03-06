@@ -35,6 +35,7 @@ class SubscriptionController extends Controller
       // Validate the incoming request data
       $validated = $this->request->validate([
         'registration_type' => ['required', 'string', 'in:attendee|speaker'],
+        'participation_type' => ['required', 'string', 'in:online|inperson'],
         'name' => ['required', 'string', 'min:3', 'max:100'],
         'email' => ['required', 'email', 'max:255'],
         'company' => ['required', 'string', 'min:2', 'max:255'],
