@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'title' => 'FIFA2026',
+        'title' => 'FIFI2026',
         'subtitle' => 'The Future of Intelligence The Future of Applications',
         'description' => '
         The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
@@ -78,8 +78,9 @@ With a practical and industry-focused approach, the program provides a professio
         'conf_items' => [
             [
                 'title' => 'The Future of Intelligence The Future of Applications',
+                'simple_title' => 'Artificial Intelligence',
                 'value' => 'artificial_intelligence',
-                'meta' => 'FIFA2026',
+                'meta' => 'FIFI2026',
                 'date' => 'May 18',
                 'fileName' => 'ai.png',
             ],
@@ -88,7 +89,7 @@ With a practical and industry-focused approach, the program provides a professio
             [
                 'title' => 'The Future of Intelligence The Future of Applications',
                 'value' => 'artificial_intelligence',
-                'meta' => 'FIFA2026',
+                'meta' => 'FIFI2026',
                 'date' => 'May 18',
                 'fileName' => 'ai.png',
             ],
@@ -189,7 +190,7 @@ With a practical and industry-focused approach, the program provides a professio
     ],
     'landing' => [
         'hero' => [
-            'title' => 'FIFA2026',
+            'title' => 'FIFI2026',
             'subtitle' => 'The Future of Intelligence The Future of Applications',
             'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.

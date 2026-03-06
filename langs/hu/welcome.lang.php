@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'title' => 'FIFA2026',
+        'title' => 'FIFI2026',
         'subtitle' => 'The Future of Intelligence The Future of Applications',
         'description' => '
         A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
@@ -77,8 +77,9 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'conf_items' => [
             [
                 'title' => 'The Future of Intelligence The Future of Applications',
+                'simple_title' => 'Mesterséges intelligencia',
                 'value' => 'artificial_intelligence',
-                'meta' => 'FIFA2026',
+                'meta' => 'FIFI2026',
                 'date' => 'May 18',
                 'fileName' => 'ai.png',
             ],
@@ -87,7 +88,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
             [
                 'title' => 'The Future of Intelligence The Future of Applications',
                 'value' => 'artificial_intelligence',
-                'meta' => 'FIFA2026',
+                'meta' => 'FIFI2026',
                 'date' => 'Május 18',
                 'fileName' => 'ai.png',
             ],
@@ -188,7 +189,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
     ],
     'landing' => [
         'hero' => [
-            'title' => 'FIFA2026',
+            'title' => 'FIFI2026',
             'subtitle' => 'The Future of Intelligence The Future of Applications',
             'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.

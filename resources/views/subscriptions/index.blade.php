@@ -121,6 +121,7 @@
                             </div>
                             <div class="flex-grow-1">
                                 <div class="fw-semibold"><?= $item['title'] ?></div>
+                                <div class="small text-main-blue"><?= $item['simple_title'] ?></div>
                                 <div class="small text-main-blue"><?= $item['meta'] ?></div>
                             </div>
                             <div class="small fw-semibold text-main-blue"><?= $item['date'] ?></div>
