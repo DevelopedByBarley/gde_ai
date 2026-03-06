@@ -84,7 +84,7 @@
 
                     <div class="mb-3">
                         <label class="form-label fw-semibold text-main-blue required" for="attendance_type">
-                            <?= $_COOKIE['lang'] === 'en-US' ? 'How would you like to attend the event?' : 'Hogyan szeretne részt venni az eseményen?' ?>
+                            <?= $_COOKIE['lang'] === 'en' ? 'How would you like to attend the event?' : 'Hogyan szeretne részt venni az eseményen?' ?>
                         </label>
                     </div>
                     <div class="btn-group btn-group-toggle d-flex gap-2 mb-4" role="group">
@@ -93,7 +93,7 @@
                             <?= old('participation_type') === 'online' ? 'checked' : '' ?> required>
                         <label class="btn border border-main-blue text-main-blue flex-grow-1 text-center"
                             for="onlineAttendance">
-                            <?= $_COOKIE['lang'] === 'en-US' ? 'Online' : 'Online' ?>
+                            <?= $_COOKIE['lang'] === 'en' ? 'Online' : 'Online' ?>
                         </label>
 
                         <input type="radio" class="btn-check" name="participation_type" id="inpersonAttendance"
@@ -101,7 +101,7 @@
                             <?= old('participation_type') === 'inperson' ? 'checked' : '' ?> required>
                         <label class="btn border border-main-blue text-main-blue flex-grow-1 text-center"
                             for="inpersonAttendance">
-                            <?= $_COOKIE['lang'] === 'en-US' ? 'In Person' : 'Személyesen' ?>
+                            <?= $_COOKIE['lang'] === 'en' ? 'In Person' : 'Személyesen' ?>
                         </label>
                     </div>
 
