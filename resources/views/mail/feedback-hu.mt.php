@@ -129,6 +129,18 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                               </tbody>
                                             </table>
                                             <div class="space-y-3">
+                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                Jelentkez&#233;s m&#243;dja: <strong><?= htmlspecialchars($participation_type ?? '') ?></strong>
+                                              </p>
+                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                      &#160;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
                                               <?php if ($registration_type === 'speaker'): ?>
                                                 <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
                                                   Ezúton tájékoztatjuk, hogy a Dennis Gabor Digital Horizons Week keretében megrendezésre kerülő <strong><?= htmlspecialchars($speakerConferenceName) ?></strong> konferenciára (<?= htmlspecialchars($speakerConferenceDate) ?>) benyújtott regisztrációját rögzítettük.
@@ -277,6 +289,20 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                                   <strong>Dennis Gabor Digital Horizons Week Csapat</strong>
                                                 </p>
                                               <?php endif; ?>
+                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                      &#160;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                Ha b&#225;rmilyen k&#233;rd&#233;s vagy probl&#233;ma mer&#252;lne fel, k&#233;rj&#252;k, &#237;rjon a
+                                                <a href="mailto:test@test.hu" style="color: #0d6efd; text-decoration: underline;">test@test.hu</a>
+                                                e-mail c&#237;mre.
+                                              </p>
                                             </div>
                                           </td>
                                         </tr>

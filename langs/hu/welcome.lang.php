@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'title' => 'FIFI2026',
-        'subtitle' => 'The Future of Intelligence The Future of Applications',
+        'subtitle' => 'The Future of Intelligence The Future of Implementations',
         'description' => '
         A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
 A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
@@ -67,6 +67,8 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'company' => 'Cég / Egyetem',
         'phone' => 'Telefonszám',
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
+        'horizons_info' => 'Amennyiben szeretne jelentkezni további eseményeinkre is, kérjük látogasson el a',
+        'horizons_link_label' => 'GDE Horizons oldalára',
         'agree' => 'Elfogadom az ÁSZF-et',
         'submit' => 'Küldés',
         'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
@@ -76,7 +78,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'registration_type' => 'Válassza ki hogy milyen módon szeretne részt venni a konferencián',
         'conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Applications',
+                'title' => 'The Future of Intelligence The Future of Implementations',
                 'simple_title' => 'Mesterséges intelligencia',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
@@ -86,7 +88,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
         'all_conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Applications',
+                'title' => 'The Future of Intelligence The Future of Implementations',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'Május 18',
@@ -190,7 +192,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
     'landing' => [
         'hero' => [
             'title' => 'FIFI2026',
-            'subtitle' => 'The Future of Intelligence The Future of Applications',
+            'subtitle' => 'The Future of Intelligence The Future of Implementations',
             'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
             A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
@@ -300,15 +302,25 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
     ],
     'footer' => [
         'about_title' => 'Gábor Dénes Egyetem',
-        'about_text' => 'A GDE International Science Summit kutatókat, iparági vezetőket és innovátorokat hoz össze a technológia és a tudomány jövőjének bemutatására.',
+        'about_text' => 'A GDE Digital Horizons Week kutatókat, iparági vezetőket és innovátorokat hoz össze a technológia és a tudomány jövőjének bemutatására.',
         'quick_links' => 'Gyors linkek',
         'links' => [
-            'home' => 'Kezdőlap',
-            'registration' => 'Regisztráció',
-            'speakers' => 'Előadók',
-            'contact' => 'Kapcsolat',
-            'privacy' => 'Adatvédelem',
-            'terms' => 'ÁSZF',
+            'home' => [
+                'label' => 'Kezdőlap',
+                'url' => '/',
+            ],
+            'registration' => [
+                'label' => 'Regisztráció',
+                'url' => '/subscription',
+            ],
+            'privacy' => [
+                'label' => 'Adatvédelmi szabályzat',
+                'url' => '/privacy',
+            ],
+            'terms' => [
+                'label' => 'Általános Szerződési Feltételek',
+                'url' => '/terms',
+            ],
         ],
         'contact_title' => 'Kapcsolat',
         'contact_city' => 'Budapest, HU',
@@ -318,16 +330,6 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'newsletter_text' => 'Értesülj a konferencia híreiről.',
         'newsletter_placeholder' => 'E-mail cím',
         'newsletter_button' => 'Feliratkozás',
-        'copyright' => '© 2026 GDE International Science Summit',
-        'quick_order' => [
-            'home',
-            'registration',
-            'speakers',
-            'contact',
-        ],
-        'legal_order' => [
-            'privacy',
-            'terms',
-        ],
+        'copyright' => '© 2026 GDE  Digital Horizons Week',
     ],
 ];

@@ -212,6 +212,18 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                               </tbody>
                                             </table>
                                             <div class="space-y-3">
+                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                Participation type: <strong><?= htmlspecialchars($participation_type ?? '') ?></strong>
+                                              </p>
+                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                      &#160;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
                                               <?php if ($registration_type === 'speaker'): ?>
                                                 <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
                                                   We hereby inform you that we have recorded your registration submitted for the <strong><?= htmlspecialchars($speakerConferenceName) ?></strong> conference (<?= htmlspecialchars($speakerConferenceDate) ?>), organized within the Dennis Gabor Digital Horizons Week.
@@ -359,6 +371,19 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                                   <strong>Dennis Gabor Digital Horizons Week Team</strong>
                                                 </p>
                                               <?php endif; ?>
+                                              <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">
+                                                <tbody>
+                                                  <tr>
+                                                    <td style="line-height: 12px; font-size: 12px; width: 100%; height: 12px; margin: 0;" align="left" width="100%" height="12">
+                                                      &#160;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
+                                                If you have any questions or run into any issues, please write to
+                                                <a href="mailto:test@test.hu" style="color: #0d6efd; text-decoration: underline;">test@test.hu</a>.
+                                              </p>
                                             </div>
                                           </td>
                                         </tr>

@@ -1,7 +1,7 @@
 <?php
 return [
   'university' => 'Gábor Dénes Egyetem',
-  'title' => 'The Future of Intelligence The Future of Applications',
+  'title' => 'The Future of Intelligence The Future of Implementations',
   'date_range' => 'Május 18.',
   'city' => 'Gábor Dénes Egyetem, Budapest ',
   'year' => '2026',

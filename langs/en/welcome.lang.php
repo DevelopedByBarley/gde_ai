@@ -3,7 +3,7 @@
 return [
     'hero' => [
         'title' => 'FIFI2026',
-        'subtitle' => 'The Future of Intelligence The Future of Applications',
+        'subtitle' => 'The Future of Intelligence The Future of Implementations',
         'description' => '
         The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
 The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
@@ -67,6 +67,8 @@ With a practical and industry-focused approach, the program provides a professio
         'company' => 'Company / University',
         'phone' => 'Phone number',
         'select_conferences' => 'Select the conferences you would like to attend',
+        'horizons_info' => 'If you would like to register for our other events as well, please visit the',
+        'horizons_link_label' => 'GDE Horizons website',
         'agree' => 'I agree to the terms and conditions',
         'submit' => 'Submit',
         'help_text' => 'If you have any questions or issues, please write to:',
@@ -77,7 +79,7 @@ With a practical and industry-focused approach, the program provides a professio
         'registration_type' => 'Select how you would like to participate in the conference',
         'conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Applications',
+                'title' => 'The Future of Intelligence The Future of Implementations',
                 'simple_title' => 'Artificial Intelligence',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
@@ -87,7 +89,7 @@ With a practical and industry-focused approach, the program provides a professio
         ],
         'all_conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Applications',
+                'title' => 'The Future of Intelligence The Future of Implementations',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'May 18',
@@ -191,7 +193,7 @@ With a practical and industry-focused approach, the program provides a professio
     'landing' => [
         'hero' => [
             'title' => 'FIFI2026',
-            'subtitle' => 'The Future of Intelligence The Future of Applications',
+            'subtitle' => 'The Future of Intelligence The Future of Implementations',
             'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
             The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
@@ -301,15 +303,17 @@ With a practical and industry-focused approach, the program provides a professio
     ],
     'footer' => [
         'about_title' => 'Gabor Denes University',
-        'about_text' => 'The GDE International Science Summit brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
+        'about_text' => 'The GDE  Digital Horizons Week brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
         'quick_links' => 'Quick Links',
         'links' => [
-            'home' => 'Home',
-            'registration' => 'Registration',
-            'speakers' => 'Speakers',
-            'contact' => 'Contact',
-            'privacy' => 'Privacy',
-            'terms' => 'Terms',
+            'home' => [
+                'label' => 'Home',
+                'url' => '/',
+            ],
+            'registration' => [
+                'label' => 'Registration',
+                'url' => '/subscription',
+            ],
         ],
         'contact_title' => 'Contact',
         'contact_city' => 'Budapest, HU',
@@ -319,16 +323,6 @@ With a practical and industry-focused approach, the program provides a professio
         'newsletter_text' => 'Get updates about conference news.',
         'newsletter_placeholder' => 'Email address',
         'newsletter_button' => 'Subscribe',
-        'copyright' => '© 2026 GDE International Science Summit',
-        'quick_order' => [
-            'home',
-            'registration',
-            'speakers',
-            'contact',
-        ],
-        'legal_order' => [
-            'privacy',
-            'terms',
-        ],
+        'copyright' => '(c) 2026 GDE  Digital Horizons Week',
     ],
 ];
