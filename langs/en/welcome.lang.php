@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'privacy_policy' => 'adatkezeles_en.pdf',
     'hero' => [
         'title' => 'FIFI2026',
         'subtitle' => 'The Future of Intelligence The Future of Implementations',
@@ -37,7 +38,7 @@ With a practical and industry-focused approach, the program provides a professio
     ],
     'conference_cards' => [
         [
-            'date' => '18 May 2026',
+            'date' => '18th May 2026',
             'title' => 'Day 1 - Hardware and Innovation',
             'description' => 'Opening ceremony, keynote presentations on the latest drone technologies, workshop sessions.',
         ],
@@ -69,7 +70,7 @@ With a practical and industry-focused approach, the program provides a professio
         'select_conferences' => 'Select the conferences you would like to attend',
         'horizons_info' => 'If you would like to register for our other events as well, please visit the',
         'horizons_link_label' => 'GDE Horizons website',
-        'agree' => 'I agree to the terms and conditions',
+        'agree' => 'I accept the <a href="/public/documents/adatkezeles_en.pdf" target="_blank">Privacy Policy</a>',
         'submit' => 'Submit',
         'help_text' => 'If you have any questions or issues, please write to:',
         'help_email' => 'support@gde.example',
@@ -83,7 +84,7 @@ With a practical and industry-focused approach, the program provides a professio
                 'simple_title' => 'Artificial Intelligence',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
-                'date' => 'May 18',
+                'date' => '18th May',
                 'fileName' => 'ai.png',
             ],
         ],
@@ -198,10 +199,10 @@ With a practical and industry-focused approach, the program provides a professio
             'description' => 'The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
             The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
             With a practical and industry-focused approach, the program provides a professional forum to discuss AI implementation challenges and collaboration opportunities between academic and market actors.',
-            'date' => '18 May 2026',
+            'date' => '18th May 2026',
             'location' => 'Dennis Gabor University, Budapest, Hungary',
             'language' => 'HU / EN',
-            'cta' => 'View full Summit',
+            'cta' => 'View full conference week',
         ],
         'topics' => [
             'title' => 'Conference Topics',
@@ -240,7 +241,7 @@ With a practical and industry-focused approach, the program provides a professio
             'title' => 'Agenda',
             'items' => [
                 [
-                    'date' => '18 May 2026',
+                    'date' => '18th May 2026',
                     'time' => '09:00 - 17:00',
                     'title' => 'Day 1 - Hardware and Innovation',
                     'description' => 'Opening ceremony, keynote presentations on the latest drone technologies, workshop sessions',

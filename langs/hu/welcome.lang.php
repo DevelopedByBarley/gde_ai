@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'privacy_policy' => 'adatkezeles_hu.pdf',
     'hero' => [
         'title' => 'FIFI2026',
         'subtitle' => 'The Future of Intelligence The Future of Implementations',
@@ -69,7 +70,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'select_conferences' => 'Válaszd ki, mely konferenciákon vennél részt',
         'horizons_info' => 'Amennyiben szeretne jelentkezni további eseményeinkre is, kérjük látogasson el a',
         'horizons_link_label' => 'GDE Horizons oldalára',
-        'agree' => 'Elfogadom az ÁSZF-et',
+        'agree' => 'Elfogadom az <a href="/public/documents/adatkezeles_hu.pdf" target="_blank">Adatkezelési Szabályzatot</a>',
         'submit' => 'Küldés',
         'help_text' => 'Ha bármilyen kérdés vagy probléma felmerülne, írjanak ide:',
         'already_subscribed' => 'Ön már regisztrált a következő konferenciákra: ',
@@ -82,7 +83,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
                 'simple_title' => 'Mesterséges intelligencia',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
-                'date' => 'May 18',
+                'date' => 'Május 18.',
                 'fileName' => 'ai.png',
             ],
         ],
@@ -193,14 +194,14 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'hero' => [
             'title' => 'FIFI2026',
             'subtitle' => 'The Future of Intelligence The Future of Implementations',
-            'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
+            'subsubtitle' => 'Mesterséges intelligencia Konferencia',
             'description' => 'A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
             A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
             A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai fórumot az MI implementáció kihívásainak és az akadémiai, illetve piaci szereplők közötti együttműködési lehetőségek megvitatására.',
-            'date' => '2026. május 18.',
+            'date' => '2026. Május 18.',
             'location' => 'Gábor Dénes Egyetem, Budapest, Magyarország',
             'language' => 'HU / EN',
-            'cta' => 'View full Summit',
+            'cta' => 'Teljes konferencia hét megtekintése',
         ],
         'topics' => [
             'title' => 'Konferencia témái',

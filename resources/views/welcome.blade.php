@@ -10,7 +10,7 @@
                     <h2 class="h4 fw-semibold mb-2 text-main-blue">
                         <?= lang('welcome__landing.hero.subtitle') ?>
                     </h2>
-                    <h5 class="h5 text-muted fw-semibold mb-4 text-secondary">
+                    <h5 class="h4 text-muted fw-semibold mb-4 text-secondary">
                         <?= lang('welcome__landing.hero.subsubtitle') ?>
                     </h5>
 
@@ -79,8 +79,9 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <iframe class="w-100 h-700 mt-5" height="315" src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S"
-                title="YouTube video player" frameborder="0"
+            <iframe class="w-100 h-700 mt-5" height="315"
+                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
