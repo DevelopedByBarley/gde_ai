@@ -40,70 +40,6 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <?php
-            $carouselImages = [
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/robot.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-            ];
-            ?>
-            <div id="welcomeMediaCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <?php foreach ($carouselImages as $index => $_): ?>
-                    <button type="button" data-bs-target="#welcomeMediaCarousel" data-bs-slide-to="<?= $index ?>"
-                        class="<?= $index === 0 ? 'active' : '' ?>" <?= $index === 0 ? 'aria-current="true"' : '' ?>
-                        aria-label="Slide <?= $index + 1 ?>"></button>
-                    <?php endforeach; ?>
-                </div>
-
-                <div class="carousel-inner rounded-3 overflow-hidden shadow-sm">
-                    <?php foreach ($carouselImages as $index => $imagePath): ?>
-                    <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
-                        <img src="<?= public_file($imagePath) ?>" class="d-block w-100"
-                            style="height: 500px; object-fit: cover;" alt="Conference visual <?= $index + 1 ?>">
-                    </div>
-                    <?php endforeach; ?>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#welcomeMediaCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#welcomeMediaCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <div class="col-6">
-            <iframe class="w-100 h-500 mt-5" height="315"
-                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-
 <!-- Key Topics Section -->
 <div class="container mt-6 mb-5">
     <div class="row d-flex justify-content-center align-items-center">
@@ -184,6 +120,17 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <iframe class="w-100 h-700 mt-5" height="315"
+                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
 </div>

@@ -238,7 +238,7 @@ With a practical and industry-focused approach, the program provides a professio
             'description' => 'The conference is primarily aimed at those who are already actively working with artificial intelligence-based solutions: professionals, project managers, and product owners who encounter the challenges and opportunities of AI application in their daily work. It also provides a valuable meeting point for representatives of the academic sphere – researchers, lecturers, and students. The program offers useful orientation for SME owners and decision-makers who are just beginning to consider the business integration of artificial intelligence and want to gain a well-founded understanding of possible directions. Last but not least, legal and ethical experts, as well as those working in public administration, can also take away relevant insights and practical knowledge from the presentations.',
         ],
         'agenda' => [
-            'title' => 'Agenda',
+            'title' => 'FIFI conference agenda',
             'items' => [
                 [
                     'date' => '18th May 2026',
@@ -314,6 +314,14 @@ With a practical and industry-focused approach, the program provides a professio
             'registration' => [
                 'label' => 'Registration',
                 'url' => '/subscription',
+            ],
+            'privacy' => [
+                'label' => 'Privacy Policy',
+                'url' => '/privacy',
+            ],
+            'terms' => [
+                'label' => 'Terms and Conditions',
+                'url' => '/terms',
             ],
         ],
         'contact_title' => 'Contact',
