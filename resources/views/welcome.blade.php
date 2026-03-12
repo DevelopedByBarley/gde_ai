@@ -42,31 +42,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-6">
-            <?php
-            $carouselImages = [
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/robot.jpg',
-                'images/base/FSFT.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-                'images/base/FTFL.jpg',
-                'images/base/robot.jpg',
-            ];
-            ?>
+        <div class="col-lg-6">
             <div id="welcomeMediaCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <?php foreach ($carouselImages as $index => $_): ?>
+                    <?php foreach (public_gallery_images('images/base/gallery') as $index => $_): ?>
                     <button type="button" data-bs-target="#welcomeMediaCarousel" data-bs-slide-to="<?= $index ?>"
                         class="<?= $index === 0 ? 'active' : '' ?>" <?= $index === 0 ? 'aria-current="true"' : '' ?>
                         aria-label="Slide <?= $index + 1 ?>"></button>
@@ -74,7 +53,7 @@
                 </div>
 
                 <div class="carousel-inner rounded-3 overflow-hidden shadow-sm">
-                    <?php foreach ($carouselImages as $index => $imagePath): ?>
+                    <?php foreach (public_gallery_images('images/base/gallery') as $index => $imagePath): ?>
                     <div class="carousel-item <?= $index === 0 ? 'active' : '' ?>">
                         <img src="<?= public_file($imagePath) ?>" class="d-block w-100"
                             style="height: 500px; object-fit: cover;" alt="Conference visual <?= $index + 1 ?>">
@@ -94,7 +73,7 @@
                 </button>
             </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6">
             <iframe class="w-100 h-500 mt-5" height="315"
                 src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
                 frameborder="0"
@@ -104,11 +83,15 @@
     </div>
 </div>
 
+
+
 <!-- Key Topics Section -->
 <div class="container mt-6 mb-5">
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-lg-10">
-            <h2 class="text-center h3 fw-bold mb-5 text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
+            <h2 class="text-center h3 fw-bold text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
+            <p class="mb-5 text-center"><?= lang('welcome__landing.invitation.desc') ?></p>
+
             <?php
             $topics = lang('welcome__landing.topics.items');
             $half = (int) ceil(count($topics) / 2);
@@ -136,7 +119,8 @@
                     <?php foreach ($leftTopics as $index => $topic): ?>
                     <div class="<?= $index < count($leftTopics) - 1 ? 'mb-4' : '' ?>">
                         <div>
-                            <p class="fw-bold text-main-blue text-end mb-2"><?= $topic['title'] ?></p>
+                            <p style="font-size: 1.2rem;" class="fw-bold text-main-blue text-end mb-2">
+                                <?= $topic['title'] ?></p>
                             <?php if (!empty($topic['note'])): ?>
                             <p class="small text-secondary mb-0"><?= $topic['note'] ?></p>
                             <?php endif; ?>
@@ -154,13 +138,19 @@
                     <?php foreach ($rightTopics as $index => $topic): ?>
                     <div class="<?= $index < count($rightTopics) - 1 ? 'mb-4' : '' ?>">
                         <div>
-                            <p class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></p>
+                            <p style="font-size: 1.2rem;" class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></p>
                             <?php if (!empty($topic['note'])): ?>
                             <p class="small text-secondary mb-0"><?= $topic['note'] ?></p>
                             <?php endif; ?>
                         </div>
                     </div>
                     <?php endforeach; ?>
+                </div>
+
+
+                <div class="col-12 text-center mt-5">
+                    <a href="/subscription"
+                        class="btn btn-lg bg-main-blue text-white rounded-pill"><?= lang('navbar__links.registration') ?></a>
                 </div>
             </div>
         </div>
@@ -303,9 +293,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="fw-bold mb-2"><?= lang('welcome__footer.contact_title') ?></div>
                         <div class="small">
-                            <div><?= lang('welcome__footer.contact_city') ?></div>
                             <div><?= lang('welcome__footer.contact_email') ?></div>
-                            <div><?= lang('welcome__footer.contact_phone') ?></div>
                         </div>
                     </div>
                 </div>
@@ -323,6 +311,7 @@
         </div>
     </div>
 </footer>
+
 <script>
     const parallaxHero = document.getElementById('parallaxHero');
 

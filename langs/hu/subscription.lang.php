@@ -36,7 +36,7 @@ return [
       'icon' => '💡',
     ],
     [
-      'title' => 'Mesterséges intelligencia',
+      'title' => 'International Conference on Artificial Intelligence and Digital Transformation',
       'value' => 'artificial_intelligence',
       'meta' => 'AI, adatok, alkalmazások',
       'date' => 'május 18.',

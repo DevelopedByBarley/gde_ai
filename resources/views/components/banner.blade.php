@@ -3,7 +3,7 @@
 
     <?php
     $conferenceTopics = lang('navbar__topics');
-    $previousConferenceTopics = array_slice($conferenceTopics, 0, 2);
+    $previousConferenceTopics = array_slice($conferenceTopics, 0, 1);
     $previousConferenceLabel = ($_COOKIE['lang'] ?? 'hu') === 'en' ? 'Previous conferences' : 'Korábbi konferenciák';
     ?>
 

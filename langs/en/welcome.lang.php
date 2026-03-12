@@ -4,7 +4,7 @@ return [
     'privacy_policy' => 'adatkezeles_en.pdf',
     'hero' => [
         'title' => 'FIFI2026',
-        'subtitle' => 'The Future of Intelligence The Future of Implementations',
+        'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',
         'description' => '
         The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
 The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
@@ -80,7 +80,7 @@ With a practical and industry-focused approach, the program provides a professio
         'registration_type' => 'Select how you would like to participate in the conference',
         'conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Implementations',
+                'title' => 'The Future of Intelligence <br/> The Future of Implementations',
                 'simple_title' => 'Artificial Intelligence',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
@@ -90,7 +90,7 @@ With a practical and industry-focused approach, the program provides a professio
         ],
         'all_conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Implementations',
+                'title' => 'The Future of Intelligence <br/> The Future of Implementations',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'May 18',
@@ -194,7 +194,7 @@ With a practical and industry-focused approach, the program provides a professio
     'landing' => [
         'hero' => [
             'title' => 'FIFI2026',
-            'subtitle' => 'The Future of Intelligence The Future of Implementations',
+            'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',
             'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'The conference aims to examine the scientific and industrial application of artificial intelligence, considering regulatory, organizational, and technological frameworks.
             The event seeks to strengthen professional collaboration among innovation experts, business decision-makers, researchers, and compliance specialists.
@@ -203,6 +203,9 @@ With a practical and industry-focused approach, the program provides a professio
             'location' => 'Dennis Gabor University, Budapest, Hungary',
             'language' => 'HU / EN',
             'cta' => 'View full conference week',
+        ],
+        'invitation' => [
+            'desc' => 'We invite speakers and professional participants to our conference. The event can be attended in person in Budapest or online, and presentations can be made in the following topics:'
         ],
         'topics' => [
             'title' => 'Conference Topics',
@@ -326,7 +329,7 @@ With a practical and industry-focused approach, the program provides a professio
         ],
         'contact_title' => 'Contact',
         'contact_city' => 'Budapest, HU',
-        'contact_email' => 'info@gde.hu',
+        'contact_email' => 'horizon@gde.hu',
         'contact_phone' => '+36 1 234 5678',
         'newsletter_title' => 'Newsletter',
         'newsletter_text' => 'Get updates about conference news.',

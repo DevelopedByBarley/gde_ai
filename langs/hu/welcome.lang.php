@@ -4,7 +4,7 @@ return [
     'privacy_policy' => 'adatkezeles_hu.pdf',
     'hero' => [
         'title' => 'FIFI2026',
-        'subtitle' => 'The Future of Intelligence The Future of Implementations',
+        'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',
         'description' => '
         A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
 A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
@@ -79,8 +79,8 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         'registration_type' => 'Válassza ki hogy milyen módon szeretne részt venni a konferencián',
         'conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Implementations',
-                'simple_title' => 'Mesterséges intelligencia',
+                'title' => 'The Future of Intelligence <br/> The Future of Implementations',
+                'simple_title' => 'International Conference on Artificial Intelligence and Digital Transformation',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'Május 18.',
@@ -89,7 +89,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
         'all_conf_items' => [
             [
-                'title' => 'The Future of Intelligence The Future of Implementations',
+                'title' => 'The Future of Intelligence <br/> The Future of Implementations',
                 'value' => 'artificial_intelligence',
                 'meta' => 'FIFI2026',
                 'date' => 'Május 18',
@@ -193,8 +193,8 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
     'landing' => [
         'hero' => [
             'title' => 'FIFI2026',
-            'subtitle' => 'The Future of Intelligence The Future of Implementations',
-            'subsubtitle' => 'Mesterséges intelligencia Konferencia',
+            'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',
+            'subsubtitle' => 'International Conference on Artificial Intelligence and Digital Transformation',
             'description' => 'A konferencia célja a mesterséges intelligencia alkalmazásának tudományos és iparági vizsgálata a szabályozási, szervezeti és technológiai keretek figyelembevételével.
             A rendezvény az innovációs szakemberek, üzleti döntéshozók, kutatók és compliance területen dolgozó szakértők közötti szakmai együttműködést kívánja erősíteni.
             A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai fórumot az MI implementáció kihívásainak és az akadémiai, illetve piaci szereplők közötti együttműködési lehetőségek megvitatására.',
@@ -202,6 +202,9 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
             'location' => 'Gábor Dénes Egyetem, Budapest, Magyarország',
             'language' => 'HU / EN',
             'cta' => 'Teljes konferencia hét megtekintése',
+        ],
+        'invitation' => [
+            'desc' => 'Konferenciánkra várjuk előadók és szakmai résztvevők jelentkezését. A rendezvényen személyesen Budapesten vagy online formában is lehet részt venni és előadást tartani az alábbi témakörökben:'
         ],
         'topics' => [
             'title' => 'Konferencia témái',
@@ -233,7 +236,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
             ],
         ],
         'audience' => [
-            'title' => 'Kinek szól a konferencia?',
+            'title' => 'Kiket várunk a konferenciára?',
             'description' => 'A konferencia elsősorban azoknak szól, akik már aktívan dolgoznak mesterséges intelligencia alapú megoldásokkal: szakembereknek, projektgazdáknak és termékfelelősöknek, akik a napi munkájuk során szembesülnek az AI alkalmazásának kihívásaival és lehetőségeivel. Emellett értékes találkozási pontot kínál az egyetemi szféra képviselői – kutatók, oktatók és hallgatók – számára is. A program hasznos orientációt nyújt azoknak a kkv-tulajdonosoknak és döntéshozóknak is, akik még csak most fontolgatják a mesterséges intelligencia üzleti integrációját, és megalapozott képet szeretnének kapni a lehetséges irányokról. Végül, de nem utolsósorban, a jogi és etikai szakértők, valamint az államigazgatás területén dolgozók is releváns szempontokat és gyakorlati ismereteket vihetnek haza az előadásokról.'
         ],
         'agenda' => [
@@ -325,7 +328,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
         'contact_title' => 'Kapcsolat',
         'contact_city' => 'Budapest, HU',
-        'contact_email' => 'info@gde.hu',
+        'contact_email' => 'horizon@gde.hu',
         'contact_phone' => '+36 1 234 5678',
         'newsletter_title' => 'Hírlevél',
         'newsletter_text' => 'Értesülj a konferencia híreiről.',

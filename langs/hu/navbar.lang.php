@@ -6,16 +6,16 @@ return [
   ],
   'topics' => [
     [
+      'label' => 'AI 2025',
+      'url' => 'https://aikonferencia.gde.hu/',
+    ],
+    [
       'label' => 'Dróntechnológia',
       'url' => 'https://dronkonferencia.gde.hu/',
     ],
     [
       'label' => 'FTFL',
       'url' => 'https://ftfl.gde.hu/',
-    ],
-    [
-      'label' => 'AI',
-      'url' => 'https://aikonferencia.gde.hu/',
     ],
   ],
 ];
