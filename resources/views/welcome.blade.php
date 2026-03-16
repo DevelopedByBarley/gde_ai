@@ -19,15 +19,15 @@
 
                     <div class="row">
                         <div class="col-12 col-xl-6 bg-red-500">
-                            <img src="<?= public_file('images/ai.png') ?>" alt="">
+                            <img src="<?= public_file('images/flyer.jpg') ?>" alt="">
                         </div>
-                        <div class="col-12 col-xl-6">
+                        <div class="col-12 col-xl-6 p-lg-4">
                             <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
                                 <?= lang('welcome__landing.hero.description') ?>
                             </p>
                         </div>
                     </div>
-                    <div class="small mb-4">
+                    <div class="small mb-4 mt-3">
                         <span class="me-3 text-main-blue"><i class="bi bi-calendar"></i>
                             <?= lang('welcome__landing.hero.date') ?></span>
                         <span class="me-3 text-main-blue"><i class="bi bi-geo-alt"></i>
@@ -154,7 +154,8 @@
                     <?php foreach ($rightTopics as $index => $topic): ?>
                     <div class="<?= $index < count($rightTopics) - 1 ? 'mb-4' : '' ?>">
                         <div>
-                            <p style="font-size: 1.2rem;" class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?></p>
+                            <p style="font-size: 1.2rem;" class="fw-bold text-main-blue mb-2"><?= $topic['title'] ?>
+                            </p>
                             <?php if (!empty($topic['note'])): ?>
                             <p class="small text-secondary mb-0"><?= $topic['note'] ?></p>
                             <?php endif; ?>
@@ -281,12 +282,12 @@
 <?php endif; ?>
 
 <!-- FAQ Section -->
-<div class="container">ú
+<div class="container">
     <div class="row">
         <div class="col-12 col-xl-6">
-
-            <iframe class="w-100 h-500 mt-5" height="315"
-                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
+            <p class="fw-semibold text-main-blue mt-5 mb-2"><?= lang('welcome__landing.youtube_label') ?></p>
+            <iframe class="w-100 h-500" height="315"
+                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=5lhBR41AH7rl32Iw" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

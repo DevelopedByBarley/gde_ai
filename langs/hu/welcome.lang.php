@@ -213,6 +213,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
             'language' => 'HU / EN',
             'cta' => 'Teljes konferencia hét megtekintése',
         ],
+        'youtube_label' => 'Ilyen volt az MI 2025 Konferencia:',
         'invitation' => [
             'desc' => 'Konferenciánkra várjuk előadók és szakmai résztvevők jelentkezését. A rendezvényen személyesen Budapesten vagy online formában is lehet részt venni és előadást tartani az alábbi témakörökben:'
         ],

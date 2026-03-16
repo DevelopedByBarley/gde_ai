@@ -214,6 +214,7 @@ With a practical and industry-focused approach, the program provides a professio
             'language' => 'HU / EN',
             'cta' => 'View full conference week',
         ],
+        'youtube_label' => 'This is how the AI 2025 Conference was:',
         'invitation' => [
             'desc' => 'We invite speakers and professional participants to our conference. The event can be attended in person in Budapest or online, and presentations can be made in the following topics:'
         ],
