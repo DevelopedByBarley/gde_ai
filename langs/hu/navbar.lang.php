@@ -6,7 +6,7 @@ return [
   ],
   'topics' => [
     [
-      'label' => 'AI 2025',
+      'label' => 'MI 2025',
       'url' => 'https://fifi.gde.hu/',
     ],
     [

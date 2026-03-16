@@ -3,7 +3,7 @@ return [
   'university' => 'Gabor Denes Egyetem',
   'title' => 'The Future of Intelligence <br/> The Future of Implementations',
   'date_range' => '18th May',
-  'city' => 'Dennis Gabor University, Budapest',
+  'city' => '<a href="https://www.gde.hu/our-university" class="text-white text-decoration-none" target="_blank">Dennis Gabor University</a>, Budapest',
   'year' => '2026',
   'lang' => [
     'en_label' => 'En',

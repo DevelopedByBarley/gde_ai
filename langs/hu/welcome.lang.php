@@ -191,6 +191,16 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
         ],
     ],
     'landing' => [
+        'alert' => [
+            'title' => 'Felhívás előadóknak és szakmai résztvevőknek',
+            'body' => 'A FIFI2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és lehetőséget biztosít a mesterséges intelligencia és a digitális transzformáció területén születő tudományos eredmények és innovatív alkalmazások bemutatására. A konferencián személyes és online formában is részt lehet venni, valamint előadást tartani. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését! A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
+            'list' => [
+                'Tudományos publikációk és kutatási eredmények',
+                'Esettanulmányok és gyakorlati alkalmazások',
+                'Folyamatban lévő kutatási projektek',
+                'Doktori kutatások és disszertációs témák',
+            ],
+        ],
         'hero' => [
             'title' => 'FIFI2026',
             'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',

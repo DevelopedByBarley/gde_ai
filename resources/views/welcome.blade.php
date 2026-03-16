@@ -17,9 +17,16 @@
                     <hr class="bg-main-blue w-25 mx-auto" style="height: 3px; opacity: 1;">
 
 
-                    <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
-                        <?= lang('welcome__landing.hero.description') ?>
-                    </p>
+                    <div class="row">
+                        <div class="col-12 col-xl-6 bg-red-500">
+                            <img src="<?= public_file('images/ai.png') ?>" alt="">
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
+                                <?= lang('welcome__landing.hero.description') ?>
+                            </p>
+                        </div>
+                    </div>
                     <div class="small mb-4">
                         <span class="me-3 text-main-blue"><i class="bi bi-calendar"></i>
                             <?= lang('welcome__landing.hero.date') ?></span>
@@ -42,6 +49,19 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+            <div class="text-center px-4 py-5">
+                <h3 class="fw-bold mb-4"><?= lang('welcome__landing.alert.title') ?></h3>
+                <p class="text-muted mb-4"><?= lang('welcome__landing.alert.body') ?></p>
+                <ul class="list-unstyled">
+                    <?php foreach (lang('welcome__landing.alert.list') as $item): ?>
+                    <li class="mb-2">
+                        <i class="bi bi-check-circle-fill text-primary me-2"></i><?= $item ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        </div>
         <div class="col-lg-6">
             <div id="welcomeMediaCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -74,11 +94,7 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <iframe class="w-100 h-500 mt-5" height="315"
-                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
     </div>
 </div>
@@ -90,7 +106,7 @@
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-lg-10">
             <h2 class="text-center h3 fw-bold text-main-blue"><?= lang('welcome__landing.topics.title') ?></h2>
-            <p class="mb-5 text-center"><?= lang('welcome__landing.invitation.desc') ?></p>
+            <!--<p class="mb-5 text-center"><?= lang('welcome__landing.invitation.desc') ?></p>-->
 
             <?php
             $topics = lang('welcome__landing.topics.items');
@@ -265,8 +281,22 @@
 <?php endif; ?>
 
 <!-- FAQ Section -->
-<div class="container">
-    <?php include base_path('resources/views/components/faq.blade.php'); ?>
+<div class="container">ú
+    <div class="row">
+        <div class="col-12 col-xl-6">
+
+            <iframe class="w-100 h-500 mt-5" height="315"
+                src="https://www.youtube.com/embed/FnKcVfqmvkk?si=1SrNGH8bpefqEK8S" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-12 col-xl-6">
+            <?php include base_path('resources/views/components/faq.blade.php'); ?>
+        </div>
+    </div>
+
 </div>
 
 <footer class="gradient-bg-horizontal text-white mt-5">

@@ -192,6 +192,16 @@ With a practical and industry-focused approach, the program provides a professio
         ],
     ],
     'landing' => [
+        'alert' => [
+            'title' => 'Call for Speakers and Professional Participants',
+            'body' => 'The FIFI2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing an opportunity to present scientific findings and innovative applications in the fields of artificial intelligence and digital transformation. Participation and presentations are possible both in person and online. We welcome applications from speakers, exhibitors, and professional attendees! The conference offers the opportunity to present the following works to a broad professional audience:',
+            'list' => [
+                'Scientific publications and research results',
+                'Case studies and practical applications',
+                'Ongoing research projects',
+                'Doctoral research and dissertation topics',
+            ],
+        ],
         'hero' => [
             'title' => 'FIFI2026',
             'subtitle' => 'The Future of Intelligence <br/> The Future of Implementations',
