@@ -7,11 +7,11 @@ return [
   'topics' => [
     [
       'label' => 'AI 2025',
-      'url' => 'https://aikonferencia.gde.hu/',
+      'url' => 'https://fifi.gde.hu/',
     ],
     [
       'label' => 'Dróntechnológia',
-      'url' => 'https://dronkonferencia.gde.hu/',
+      'url' => 'https://fdfv.gde.hu/',
     ],
     [
       'label' => 'FTFL',

@@ -73,7 +73,7 @@
         <ul class="dropdown-menu dropdown-menu-end shadow-sm">
             <?php foreach ($previousConferenceTopics as $topic): ?>
             <li>
-                <a class="dropdown-item" href="<?= $topic['url'] . "2025/" ?>" target="_blank"
+                <a class="dropdown-item" href="https://fifi.gde.hu/2025/" target="_blank"
                     rel="noopener noreferrer"><?= $topic['label'] ?></a>
             </li>
             <?php endforeach; ?>
@@ -87,7 +87,7 @@
                 class="col-12 col-lg-5 d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-end gap-3 text-center text-lg-end">
                 <div>
                     <img style="width: 100%; max-width: 250px;"
-                        src="<?= public_file('images/base/gde-logo-white.png') ?>" alt="GDE Logo">
+                        src="<?= public_file('images/base/gde-logo_'.($_COOKIE['lang'] ?? 'hu').'.png') ?>" alt="GDE Logo">
                 </div>
                 <div class="pe-0 pe-lg-3 py-3">
                     <a href="https://gde.hu/erasmus-week-2026" target="_blank" class="bg-white rounded p-2 d-block">
