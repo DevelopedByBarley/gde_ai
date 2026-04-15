@@ -238,7 +238,7 @@ $speakerRequirementsUrl = $speakerAbstractUrl;
                                                   </tbody>
                                                 </table>
                                                 <p class="text-gray-700" style="line-height: 24px; font-size: 16px; color: #4A5568; width: 100%; margin: 0;" align="left">
-                                                  As the next step, please upload the abstract related to your presentation using the following link:
+                                                  Please proceed to upload the abstract for your presentation in both Hungarian and English using the following link:
                                                   <a href="<?= htmlspecialchars($speakerAbstractUrl) ?>" style="color: #0d6efd; text-decoration: underline;"><?= htmlspecialchars($speakerAbstractUrl) ?></a>
                                                 </p>
                                                 <table class="s-3 w-full" role="presentation" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" width="100%">

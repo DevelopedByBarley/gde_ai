@@ -61,7 +61,7 @@ With a practical and industry-focused approach, the program provides a professio
         'speaker_talk_summary' => 'Short description',
         'speaker_abstract_upload' => 'Upload abstract',
         'title' => 'Registration',
-        'attendee' => 'Attendee registration',
+        'attendee' => 'Participant registration',
         'speaker' => 'Speaker registration',
         'name' => 'Name',
         'email' => 'Email address',
@@ -179,7 +179,7 @@ With a practical and industry-focused approach, the program provides a professio
             ],
             [
                 'question' => 'How can I apply as a speaker?',
-                'answer' => 'Online registration is required. A separate link for abstract submission will be sent in the confirmation email. The abstract must be submitted according to the prescribed formatting requirements. Notification of acceptance or rejection will be sent within one week of submission.',
+                'answer' => 'Online registration is required. After that, an abstract must be submitted according to the prescribed formatting requirements by April 20, 2026. All necessary information can be found under Speaker Information. Notification of acceptance or rejection will be sent no later than April 27.',
             ],
             [
                 'question' => 'Where will the abstracts submitted to the conference be published?',
@@ -189,12 +189,20 @@ With a practical and industry-focused approach, the program provides a professio
                 'question' => 'Will speakers receive a speaker certificate?',
                 'answer' => 'Yes, speaker certificates are provided upon request.',
             ],
+            [
+                'question' => 'Is there a publication opportunity related to the conference?',
+                'answer' => 'Yes, there is an opportunity to publish in the Gábor Dénes University\'s scientific journal <a href="https://gde.hu/digital-horizons" target="_blank">Digital Horizons</a>. Following the conference week, all speakers will receive the necessary information.',
+            ],
         ],
     ],
     'landing' => [
         'alert' => [
             'title' => 'Call for Speakers and Professional Participants',
-            'body' => 'The FIFI2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing an opportunity to present scientific findings and innovative applications in the fields of artificial intelligence and digital transformation. Participation and presentations are possible both in person and online. We welcome applications from speakers, exhibitors, and professional attendees! The conference offers the opportunity to present the following works to a broad professional audience:',
+            'body' => 'The FIFI2026 conference will be held as part of the Dennis Gabor Digital Horizons Week, providing an opportunity to present scientific findings and innovative applications in the fields of artificial intelligence and digital transformation. The conference can be attended and presentations can be given both <b class="fw-bold">in person and online</b>. We welcome applications from speakers, exhibitors, and professional attendees!
+            <br/><br/>
+            <b class="fw-bold">Speaker and exhibitor applications</b> are accepted by the organizers until <b class="fw-bold">April 20, 2026</b>. <b class="fw-bold">Participation registration</b> for in-person attendance is subject to available capacity, while online participation is continuously available.
+            <br/><br/>
+            The conference offers the opportunity to present the following works to a broad professional audience:',
             'list' => [
                 'Scientific publications and research results',
                 'Case studies and practical applications',
@@ -317,8 +325,8 @@ With a practical and industry-focused approach, the program provides a professio
         ],
     ],
     'footer' => [
-        'about_title' => 'Gabor Denes University',
-        'about_text' => 'The GDE  Digital Horizons Week brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
+        'about_title' => 'Dennis Gabor University',
+        'about_text' => 'The DGU Digital Horizons Week brings together researchers, industry leaders, and innovators to showcase the future of technology and science.',
         'quick_links' => 'Quick Links',
         'links' => [
             'home' => [

@@ -178,7 +178,7 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
             ],
             [
                 'question' => 'Hogyan lehet előadóként jelentkezni?',
-                'answer' => 'Online regisztráció szükséges. A visszaigazoló e-mailben külön link érkezik az absztrakt feltöltéséhez. Az absztraktot az előírt formai követelmények szerint kell benyújtani. A feltöltést követően legkésőbb egy héten belül érkezik értesítés az elfogadásról vagy elutasításról.',
+                'answer' => 'Online regisztráció szükséges. Ezt követően absztraktot kell feltölteni az előírt formai követelményeknek megfelelően, 2026. április 20-ig. A szükséges tudnivalók az Előadói információknál találhatók. A feltöltés után legkésőbb április 27-ig érkezik értesítés az elfogadásról vagy elutasításról.',
             ],
             [
                 'question' => 'A konferenciára benyújtott absztraktok hol jelennek meg?',
@@ -188,12 +188,20 @@ A program gyakorlati és ipari fókuszú megközelítésben biztosít szakmai f�
                 'question' => 'Kapnak az előadók előadói igazolást?',
                 'answer' => 'Igen, előadói igazolást igény esetén biztosítunk.',
             ],
+            [
+                'question' => 'Van-e a konferenciához kapcsolódó publikálási lehetőség?',
+                'answer' => 'Igen, a Gábor Dénes Egyetem <a href="https://gde.hu/digital-horizons" target="_blank">Digital Horizons</a> című tudományos folyóiratában van lehetőség publikálásra. A konferenciahetet követően minden előadó megkapja a szükséges információkat.',
+            ],
         ],
     ],
     'landing' => [
         'alert' => [
             'title' => 'Felhívás előadóknak és szakmai résztvevőknek',
-            'body' => 'A FIFI2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és lehetőséget biztosít a mesterséges intelligencia és a digitális transzformáció területén születő tudományos eredmények és innovatív alkalmazások bemutatására. A konferencián személyes és online formában is részt lehet venni, valamint előadást tartani. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését! A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
+            'body' => 'A FIFI2026 konferencia a Dennis Gabor Digital Horizons Week keretében kerül megrendezésre, és lehetőséget biztosít a mesterséges intelligencia és a digitális transzformáció területén születő tudományos eredmények és innovatív alkalmazások bemutatására. A konferencián <b class="fw-bold">személyes és online formában</b> is részt lehet venni, valamint előadást tartani. Várjuk előadók, kiállítók és szakmai érdeklődők jelentkezését!
+            <br/><br/>
+            Az <b class="fw-bold">előadói és kiállítói jelentkezéseket</b> a szervezők <b class="fw-bold">2026. április 20-ig</b> várják. A <b class="fw-bold">részvételi regisztráció</b> személyes jelenlét esetén a rendelkezésre álló férőhelyek függvényében biztosított, online formában pedig folyamatosan elérhető.
+            <br/><br/>
+            A konferencián lehetőség nyílik az alábbi munkák bemutatására széles körű szakmai közönség előtt:',
             'list' => [
                 'Tudományos publikációk és kutatási eredmények',
                 'Esettanulmányok és gyakorlati alkalmazások',

@@ -18,11 +18,12 @@
 
 
                     <div class="row">
-                        <div class="col-12 col-xl-6 bg-red-500">
-                            <img src="<?= public_file('images/flyer.jpg') ?>" alt="">
+                        <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center p-0 m-0">
+                            <img src="<?= public_file('images/base/flyer_' . ($_COOKIE['lang'] ?? 'hu') . '.jpg') ?>"
+                                class="img-fluid p-0 m-0" alt="">
                         </div>
                         <div class="col-12 col-xl-6 p-lg-4">
-                            <p class="h5 fw-normal mb-4" style="line-height: 1.6;">
+                            <p class="h5 fw-normal mb-4" style="line-height: 1.6; text-align: justify;">
                                 <?= lang('welcome__landing.hero.description') ?>
                             </p>
                         </div>
@@ -49,10 +50,10 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-6 d-flex align-items-center">
+        <div class="col-lg-6 d-flex">
             <div class="text-center px-4 py-5">
                 <h3 class="fw-bold mb-4"><?= lang('welcome__landing.alert.title') ?></h3>
-                <p class="text-muted mb-4"><?= lang('welcome__landing.alert.body') ?></p>
+                <p class="text-muted mb-4" style="text-align: justify;"><?= lang('welcome__landing.alert.body') ?></p>
                 <ul class="list-unstyled">
                     <?php foreach (lang('welcome__landing.alert.list') as $item): ?>
                     <li class="mb-2">
@@ -310,7 +311,7 @@
         <div class="row g-4 align-items-start justify-content-between">
             <div class="col-12 col-lg-4">
                 <div class="d-flex align-items-center gap-3 mb-3">
-                    <div class="bg-white text-main-blue rounded-3 px-3 py-2 fw-bold">GDE</div>
+                    <div class="bg-white text-main-blue rounded-3 px-3 py-2 fw-bold">GDU</div>
                     <div class="fw-semibold"><?= lang('welcome__footer.about_title') ?></div>
                 </div>
                 <div class="small"><?= lang('welcome__footer.about_text') ?></div>
@@ -341,8 +342,10 @@
             <div class="d-flex gap-3">
                 <a class="text-white text-decoration-none"
                     href="<?= lang('welcome__footer.links.privacy.url') ?>"><?= lang('welcome__footer.links.privacy.label') ?></a>
+                <!--
                 <a class="text-white text-decoration-none"
                     href="<?= lang('welcome__footer.links.terms.url') ?>"><?= lang('welcome__footer.links.terms.label') ?></a>
+                -->
             </div>
         </div>
     </div>
