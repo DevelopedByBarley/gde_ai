@@ -80,7 +80,7 @@ class AdminSubscriberController extends Controller
   {
     try {
       Log::info('FTFL feliratkozók export indítva', ['admin' => auth('admin')->email ?? null], 'admin');
-      $this->subscriber->exportSubscribersToExcelByConference(EVENT_TYPE, 'subscribers-ftfl.xlsx');
+      $this->subscriber->exportSubscribersToExcelByConference(EVENT_TYPE, 'subscribers-' . EVENT_TYPE . '.xlsx');
     } catch (\Throwable $e) {
       Log::error('FTFL feliratkozók export hiba', ['message' => $e->getMessage(), 'admin' => auth('admin')->email ?? null], 'admin');
       return $this->toast->danger('Hiba történt az export során.')->back();

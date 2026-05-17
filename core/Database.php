@@ -25,7 +25,7 @@ class Database
             $dsn = 'mysql:host=' . $config['host'] . ';port=' . $config['port'] . ';dbname=' . $config['db_name'] . ';charset=' . $config['charset'];
 
             $this->connection = new PDO($dsn, $config['name'], $config['password'], [
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
             ]);
             
             // Növeljük a max_allowed_packet értéket 64MB-ra

@@ -4,6 +4,12 @@
         <?= csrf() ?>
         <div class="row justify-content-center py-5">
             <div class="col-12 col-lg-7">
+                <div class="alert mb-4 text-center" style="background:#fff3cd; border:1px solid #ffc107; color:#856404; border-radius:0.75rem;">
+                    <?= $_COOKIE['lang'] === 'en'
+                        ? '<div class="fw-bold fs-5 mb-1">Call for Speakers and Professional Participants</div><div>Speaker and exhibitor registration has closed. In-person attendance registration is still available subject to remaining capacity, while online registration remains continuously open.</div>'
+                        : '<div class="fw-bold fs-5 mb-1">Felhívás előadóknak és szakmai résztvevőknek</div><div>Az előadói és kiállítói regisztráció lezárult. A részvételi regisztráció személyes jelenlét esetén a rendelkezésre álló férőhelyek függvényében továbbra is biztosított, online formában pedig folyamatosan elérhető.</div>' ?>
+                </div>
+
                 <div class="bg-white rounded-4 shadow p-4 p-md-5">
                     <?= errors('conferences', session('errors')) ?>
                     <div class="text-center fw-bold h1 text-main-blue mb-4"><?= lang('welcome__registration.title') ?>
@@ -15,7 +21,7 @@
                             <?= lang('welcome__registration.registration_type') ?>
                         </label>
                     </div>
-                    <div class="btn-group btn-group-toggle d-flex gap-2 mb-3" role="group">
+                    <div class="btn-group btn-group-toggle d-flex gap-2 mb-1" role="group">
                         <input type="radio" class="btn-check" name="registration_type" id="attendeeRegistration"
                             value="attendee" autocomplete="off"
                             <?= old('registration_type') === 'attendee' ? 'checked' : '' ?> required>
@@ -25,12 +31,14 @@
                         </label>
 
                         <input type="radio" class="btn-check" name="registration_type" id="speakerRegistration"
-                            value="speaker" autocomplete="off"
-                            <?= old('registration_type') === 'speaker' ? 'checked' : '' ?> required>
+                            value="speaker" autocomplete="off" disabled>
                         <label class="btn border border-main-blue text-main-blue flex-grow-1 text-center"
-                            for="speakerRegistration">
+                            for="speakerRegistration" style="opacity:0.45; cursor:not-allowed;">
                             <?= lang('welcome__registration.speaker') ?>
                         </label>
+                    </div>
+                    <div class="text-end small text-secondary mb-3" style="opacity:0.7;">
+                        <?= $_COOKIE['lang'] === 'en' ? 'Speaker registration: closed' : 'Előadói regisztráció: lezárva' ?>
                     </div>
 
 
